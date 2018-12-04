@@ -1,0 +1,28 @@
+$c-white: #fff;
+$c-default: #424242;
+
+$c-primary: #39CFB7;
+$c-secondary: #D44F77;
+
+$c-background1: #E6BC01;
+$c-background2: #54783D;
+$c-background3: #E200BF;
+
+$c-gradient1: linear-gradient(to bottom right, $c-background1, $c-background2 , $c-background3);
+$c-gradient2: linear-gradient(to bottom right, $c-primary, $c-secondary);
+$c-gradient3: linear-gradient(to bottom right, $c-background1, $c-background2);
+$c-gradient4: linear-gradient(to bottom right, $c-background1, $c-background3);
+
+
+$c-gradient: $c-gradient3;
+
+.text-color,
+.text-gradient {
+  background: $c-gradient;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.bg-color {
+  background: linear-gradient(to bottom right, #E6BC01, #54783D , #E200BF);
+}

@@ -1,0 +1,11 @@
+image: node:6
+pages:
+  script:
+    - npm install
+    - npm run build
+    - cp -R dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

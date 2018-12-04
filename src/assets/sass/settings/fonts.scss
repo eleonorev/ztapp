@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700i|Montserrat:400,600,600i,700,700i');
+
+$f-linear: 'Montserrat', sans-serif;
+$f-text: 'Lato', sans-serif;
+
+.text {
+  font-family: $f-text;
+  font-weight: 400;
+}
+
+.text-i {
+  font-family: $f-text;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.text-light {
+  font-family: $f-linear;
+  font-weight: 400;
+}
+
+.text-bold,
+.title {
+  font-family: $f-linear;
+  font-weight: 700;
+}
+
+.title-light {
+  font-family: $f-linear;
+  font-weight: 600;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.title-i {
+  @extend .title;
+}
+
+.title-light-i {
+  @extend .title-light;
+}
+
+.title--lg {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.title--xxl {
+  font-size: 3rem;
+  text-transform: uppercase;
+}

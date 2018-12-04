@@ -1,0 +1,59 @@
+@import 'settings/colors.scss';
+@import 'settings/fonts.scss';
+
+@import 'modules/input.scss';
+
+@import 'utilities/text.scss';
+
+:root {
+  --main: rgba(255,255,255,0.2);
+}
+
+body {
+  color: #424242;
+}
+
+.Block {
+  display: block;
+  width: 100%;
+}
+
+.ZT-container {
+  margin-top: 20px;
+  z-index: 10;
+//  width: 100%;
+}
+
+
+.ZT-container-white {
+  display: block;
+  position: fixed;
+  top: 48px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: calc(100% - 95px);
+  z-index: 10;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.03);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ZT-container-white--full {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 100%;
+}
+
+.ZT-Background {
+  display: block;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #5A39C1;
+
+}
