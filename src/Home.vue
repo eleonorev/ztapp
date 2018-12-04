@@ -123,8 +123,6 @@ import Header from '@/components/Header'
 import ButtonAdd from '@/components/ButtonAdd'
 import ButtonListen from '@/components/ButtonListen'
 
-import VueScrollTo from 'vue-scrollto';
-
     export default {
         name: 'Home',
         components: {
@@ -159,7 +157,6 @@ import VueScrollTo from 'vue-scrollto';
             this.MusicListOpen = false;
             this.animateListing = 'row animateListing';
 
-              VueScrollTo.scrollTo('#Listing')
               this.name = this.getName();
               console.log(this.MusicListOpen);
               this.MusicListOpen = true;

@@ -88,8 +88,6 @@ import Maps from '@/Maps'
 import ButtonAdd from '@/components/ButtonAdd'
 import ButtonListen from '@/components/ButtonListen'
 
-import VueScrollTo from 'vue-scrollto';
-
     export default {
         name: 'MusicList',
         components: {
@@ -126,7 +124,6 @@ import VueScrollTo from 'vue-scrollto';
             this.animateListing = 'row animateListing';
 
             if (this.$route.params.id) {
-              VueScrollTo.scrollTo('#Listing')
               this.name = this.getName();
               console.log(this.MusicListOpen);
               this.MusicListOpen = true;
